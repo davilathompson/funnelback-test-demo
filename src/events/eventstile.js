@@ -9,7 +9,7 @@ export default function EventsTile(list) {
       <div className="container-fluid">
         <div className={"row"}>
           {list.options.title ? DisplayBoxesTitle(list.options.title) : null}
-          {ReturnAdminLink(list.options.linkto)}
+          {ReturnAdminLink(list.options.adminlinkto)}
           {ReturnLink(list.options.linkto)}
         </div>
         <div className={"row"}>

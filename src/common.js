@@ -14,7 +14,7 @@ export function ReturnAdminLink(link) {
   if (link) {
     return (
       <div className="adminLink">
-        <a href={link}>Personalize in <img src="https://search-demo-au.funnelback.com/s/resources/dxp-higher-education-meta/_default_preview/img/funnelback-horizontal-light.svg"/></a>
+        <a href={link} _target="_blank" >Personalize in <img src="https://search-demo-au.funnelback.com/s/resources/dxp-higher-education-meta/_default_preview/img/funnelback-horizontal-light.svg"/></a>
       </div>
     );
   }
