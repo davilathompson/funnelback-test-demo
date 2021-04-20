@@ -1,7 +1,7 @@
 import React from "react";
 import EventTileItem from "./eventTileItem.js";
 
-import { ReturnLink, DisplayBoxesTitle } from "./../common.js";
+import { ReturnLink, ReturnAdminLink, DisplayBoxesTitle } from "./../common.js";
 
 export default function EventsTile(list) {
   return (
@@ -9,6 +9,7 @@ export default function EventsTile(list) {
       <div className="container-fluid">
         <div className={"row"}>
           {list.options.title ? DisplayBoxesTitle(list.options.title) : null}
+          {ReturnAdminLink(list.options.linkto)}
           {ReturnLink(list.options.linkto)}
         </div>
         <div className={"row"}>

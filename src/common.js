@@ -10,6 +10,16 @@ export function ReturnLink(link) {
   }
 }
 
+export function ReturnAdminLink(link) {
+  if (link) {
+    return (
+      <div className="adminLink">
+        <a href={link}>Personalize in <img src="https://search-demo-au.funnelback.com/s/resources/dxp-higher-education-meta/_default_preview/img/funnelback-horizontal-light.svg"/></a>
+      </div>
+    );
+  }
+}
+
 export function DisplayBoxesTitle(title) {
   if (title) {
     return <h4 className="boxes-event__title">{title}</h4>;
